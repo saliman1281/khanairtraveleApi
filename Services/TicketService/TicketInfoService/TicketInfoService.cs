@@ -56,7 +56,6 @@ namespace Services.TicketService.TicketInfoService
             {
                 response = dataTable;
             }
-
             return response;
         }
 
@@ -65,7 +64,6 @@ namespace Services.TicketService.TicketInfoService
             List<TicketInfoResponse> response = new List<TicketInfoResponse>();
 
             string spName = @"SP_GetAllTicketOfCustomer";
-            // var _customerCNIC = Convert.ToInt64(customerCNIC);
 
             Hashtable Param = new Hashtable
                 {
@@ -87,7 +85,6 @@ namespace Services.TicketService.TicketInfoService
             TicketInfoResponse response = new TicketInfoResponse();
 
             string spName = @"SP_GetTicketInfo";
-            // var _customerCNIC = Convert.ToInt64(customerCNIC);
 
             Hashtable Param = new Hashtable
                 {
