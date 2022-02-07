@@ -36,7 +36,8 @@ namespace Services.TicketService.TicketInfoService
                     { "@toLocation", ticketInfoRequest.toLocation },
                     { "@bookingDate", ticketInfoRequest.bookingDate },
                     { "@ticketCost", ticketInfoRequest.ticketCost },
-                    { "@ticketRetail", ticketInfoRequest.ticketRetail },
+                    { "@ticketRetail", ticketInfoRequest.ticketRetail } ,
+                    { "@ticketAmountPaid", ticketInfoRequest.ticketAmountPaid },
                     { "@ticketType", ticketInfoRequest.ticketType },
                     { "@returnFrom", ticketInfoRequest.returnFrom },
                     { "@returnTo", ticketInfoRequest.returnTo },
@@ -56,14 +57,57 @@ namespace Services.TicketService.TicketInfoService
             {
                 response = dataTable;
             }
+
             return response;
         }
 
+        public async Task<string> UpdateTicketInfo(TicketInfoRequest ticketInfoRequest)
+        {
+            string response = "";
+
+            string spName = @"SP_UpdateTicketInfo";
+
+            Hashtable Param = new Hashtable
+                {
+                    { "@customerId", ticketInfoRequest.customerId },
+                    { "@customerCNIC", ticketInfoRequest.customerCNIC },
+                    { "@ticketNumber", ticketInfoRequest.ticketNumber },
+                    { "@ticketPNR", ticketInfoRequest.ticketPNR },
+                    { "@airlineType", ticketInfoRequest.airlineType },
+                    { "@fromLocation", ticketInfoRequest.fromLocation },
+                    { "@toLocation", ticketInfoRequest.toLocation },
+                    { "@bookingDate", ticketInfoRequest.bookingDate },
+                    { "@ticketCost", ticketInfoRequest.ticketCost },
+                    { "@ticketRetail", ticketInfoRequest.ticketRetail } ,
+                    { "@ticketAmountPaid", ticketInfoRequest.ticketAmountPaid },
+                    { "@ticketType", ticketInfoRequest.ticketType },
+                    { "@returnFrom", ticketInfoRequest.returnFrom },
+                    { "@returnTo", ticketInfoRequest.returnTo },
+                    { "@returnDate", ticketInfoRequest.returnDate },
+                    { "@passportImage", ticketInfoRequest.passportImage },
+                    { "@modifiedBy", ticketInfoRequest.modifiedBy!=null?ticketInfoRequest.modifiedBy:"" }
+                };
+
+            //if (ticketInfoRequest.returnDate != null && ticketInfoRequest.returnDate != "")
+            //    Param.Add("@returnDate", ticketInfoRequest.returnDate);
+            //else
+            //    Param.Add("@returnDate", DBNull.Value);
+
+            string dataTable = await _dbConnectionLogic.IUD(spName, Param);
+
+            if (dataTable != null)
+            {
+                response = dataTable;
+            }
+
+            return response;
+        }
         public async Task<List<TicketInfoResponse>> GetAllTicketOfCustomer(string customerCNIC)
         {
             List<TicketInfoResponse> response = new List<TicketInfoResponse>();
 
             string spName = @"SP_GetAllTicketOfCustomer";
+            // var _customerCNIC = Convert.ToInt64(customerCNIC);
 
             Hashtable Param = new Hashtable
                 {
@@ -85,6 +129,7 @@ namespace Services.TicketService.TicketInfoService
             TicketInfoResponse response = new TicketInfoResponse();
 
             string spName = @"SP_GetTicketInfo";
+            // var _customerCNIC = Convert.ToInt64(customerCNIC);
 
             Hashtable Param = new Hashtable
                 {
