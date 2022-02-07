@@ -27,6 +27,14 @@ namespace KHANAIRSERVICEAPI.Controllers.TicketControllers
             return Ok(response);
         }
 
+        [HttpPost("UpdateTicketInfo")]
+        public async Task<IActionResult> UpdateTicketInfo(TicketInfoRequest request)
+        {
+            var response = await _ticketInfoService.UpdateTicketInfo(request);
+
+            return Ok(response);
+        }
+
         [HttpGet("GetAllTicketOfCustomer")]
         public async Task<IActionResult> GetAllTicketOfCustomer(string customerCNIC)
         {

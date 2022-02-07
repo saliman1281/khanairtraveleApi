@@ -19,6 +19,7 @@ namespace Entities.TicketModel
             public string bookingDate { get; set; }
             public decimal ticketCost { get; set; }
             public decimal ticketRetail { get; set; }
+            public decimal ticketAmountPaid { get; set; }
             public string ticketType { get; set; }
             public string returnFrom { get; set; }
             public string returnTo { get; set; }
@@ -43,6 +44,7 @@ namespace Entities.TicketModel
            // public string entrydate { get; set; }
             public decimal ticketCost { get; set; }
             public decimal ticketRetail { get; set; }
+            public decimal ticketAmountPaid { get; set; }
             public string ticketType { get; set; }
             public string returnFrom { get; set; }
             public string returnTo { get; set; }

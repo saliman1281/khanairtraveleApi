@@ -9,6 +9,7 @@ namespace Services.TicketService.TicketInfoService
     public interface ITicketInfoService
     {
         Task<string> AddticketInfo(TicketInfoRequest request);
+        Task<string> UpdateTicketInfo(TicketInfoRequest request);
         Task<List<TicketInfoResponse>> GetAllTicketOfCustomer(string customerCNIC);
         Task<TicketInfoResponse> GetTicketInfo(string ticketNmbr);
     }

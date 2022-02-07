@@ -57,7 +57,7 @@ namespace Services.CustomerService
 
             if (dataTable != null && dataTable.Rows.Count > 0)
             {
-                response = _listConverter.GetItem<CustomerResponse>(dataTable.Rows[0]);
+                response = _listConverter.GetItem1<CustomerResponse>(dataTable.Rows[0]);
             }
 
             return response;
