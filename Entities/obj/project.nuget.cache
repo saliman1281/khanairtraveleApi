@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fErZDNZ8RZirYFP4ugdUYEDdxBO27K60dQG4QTk+N7/I6IJDmBlV3H+U+dCn3RHHXxQLEgwHjuuA7YsrrzAVjA==",
+  "dgSpecHash": "8ceFp+Jgw7IM2h+SKp6vXmBNPUVryuNg/iXWw6ahOZOCrfUOom189kiKdv9C4F8qJ3fTvcsQrt6RVS6RKKydZA==",
   "success": true,
-  "projectFilePath": "D:\\Angular work\\Github\\khanairtraveleApi\\Entities\\Entities.csproj",
+  "projectFilePath": "D:\\Angular Projects\\API\\KHANAIRSERVICEAPI\\Entities\\Entities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

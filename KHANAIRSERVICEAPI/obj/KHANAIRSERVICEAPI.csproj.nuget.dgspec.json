@@ -1,27 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Angular work\\Github\\khanairtraveleApi\\KHANAIRSERVICEAPI\\KHANAIRSERVICEAPI.csproj": {}
+    "D:\\Angular Projects\\API\\KHANAIRSERVICEAPI\\KHANAIRSERVICEAPI\\KHANAIRSERVICEAPI.csproj": {}
   },
   "projects": {
-    "D:\\Angular work\\Github\\khanairtraveleApi\\DBCore\\DBCore.csproj": {
+    "D:\\Angular Projects\\API\\KHANAIRSERVICEAPI\\DBCore\\DBCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Angular work\\Github\\khanairtraveleApi\\DBCore\\DBCore.csproj",
+        "projectUniqueName": "D:\\Angular Projects\\API\\KHANAIRSERVICEAPI\\DBCore\\DBCore.csproj",
         "projectName": "DBCore",
-        "projectPath": "D:\\Angular work\\Github\\khanairtraveleApi\\DBCore\\DBCore.csproj",
-        "packagesPath": "C:\\Users\\ABC\\.nuget\\packages\\",
-        "outputPath": "D:\\Angular work\\Github\\khanairtraveleApi\\DBCore\\obj\\",
+        "projectPath": "D:\\Angular Projects\\API\\KHANAIRSERVICEAPI\\DBCore\\DBCore.csproj",
+        "packagesPath": "C:\\Users\\Ali\\.nuget\\packages\\",
+        "outputPath": "D:\\Angular Projects\\API\\KHANAIRSERVICEAPI\\DBCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ABC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ali\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -74,24 +73,23 @@
         }
       }
     },
-    "D:\\Angular work\\Github\\khanairtraveleApi\\Entities\\Entities.csproj": {
+    "D:\\Angular Projects\\API\\KHANAIRSERVICEAPI\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Angular work\\Github\\khanairtraveleApi\\Entities\\Entities.csproj",
+        "projectUniqueName": "D:\\Angular Projects\\API\\KHANAIRSERVICEAPI\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "D:\\Angular work\\Github\\khanairtraveleApi\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\ABC\\.nuget\\packages\\",
-        "outputPath": "D:\\Angular work\\Github\\khanairtraveleApi\\Entities\\obj\\",
+        "projectPath": "D:\\Angular Projects\\API\\KHANAIRSERVICEAPI\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\Ali\\.nuget\\packages\\",
+        "outputPath": "D:\\Angular Projects\\API\\KHANAIRSERVICEAPI\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ABC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ali\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -134,24 +132,23 @@
         }
       }
     },
-    "D:\\Angular work\\Github\\khanairtraveleApi\\KHANAIRSERVICEAPI\\KHANAIRSERVICEAPI.csproj": {
+    "D:\\Angular Projects\\API\\KHANAIRSERVICEAPI\\KHANAIRSERVICEAPI\\KHANAIRSERVICEAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Angular work\\Github\\khanairtraveleApi\\KHANAIRSERVICEAPI\\KHANAIRSERVICEAPI.csproj",
+        "projectUniqueName": "D:\\Angular Projects\\API\\KHANAIRSERVICEAPI\\KHANAIRSERVICEAPI\\KHANAIRSERVICEAPI.csproj",
         "projectName": "KHANAIRSERVICEAPI",
-        "projectPath": "D:\\Angular work\\Github\\khanairtraveleApi\\KHANAIRSERVICEAPI\\KHANAIRSERVICEAPI.csproj",
-        "packagesPath": "C:\\Users\\ABC\\.nuget\\packages\\",
-        "outputPath": "D:\\Angular work\\Github\\khanairtraveleApi\\KHANAIRSERVICEAPI\\obj\\",
+        "projectPath": "D:\\Angular Projects\\API\\KHANAIRSERVICEAPI\\KHANAIRSERVICEAPI\\KHANAIRSERVICEAPI.csproj",
+        "packagesPath": "C:\\Users\\Ali\\.nuget\\packages\\",
+        "outputPath": "D:\\Angular Projects\\API\\KHANAIRSERVICEAPI\\KHANAIRSERVICEAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ABC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ali\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -164,8 +161,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Angular work\\Github\\khanairtraveleApi\\Services\\Services.csproj": {
-                "projectPath": "D:\\Angular work\\Github\\khanairtraveleApi\\Services\\Services.csproj"
+              "D:\\Angular Projects\\API\\KHANAIRSERVICEAPI\\Services\\Services.csproj": {
+                "projectPath": "D:\\Angular Projects\\API\\KHANAIRSERVICEAPI\\Services\\Services.csproj"
               }
             }
           }
@@ -207,24 +204,23 @@
         }
       }
     },
-    "D:\\Angular work\\Github\\khanairtraveleApi\\Services\\Services.csproj": {
+    "D:\\Angular Projects\\API\\KHANAIRSERVICEAPI\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Angular work\\Github\\khanairtraveleApi\\Services\\Services.csproj",
+        "projectUniqueName": "D:\\Angular Projects\\API\\KHANAIRSERVICEAPI\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "D:\\Angular work\\Github\\khanairtraveleApi\\Services\\Services.csproj",
-        "packagesPath": "C:\\Users\\ABC\\.nuget\\packages\\",
-        "outputPath": "D:\\Angular work\\Github\\khanairtraveleApi\\Services\\obj\\",
+        "projectPath": "D:\\Angular Projects\\API\\KHANAIRSERVICEAPI\\Services\\Services.csproj",
+        "packagesPath": "C:\\Users\\Ali\\.nuget\\packages\\",
+        "outputPath": "D:\\Angular Projects\\API\\KHANAIRSERVICEAPI\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ABC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ali\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -237,11 +233,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Angular work\\Github\\khanairtraveleApi\\DBCore\\DBCore.csproj": {
-                "projectPath": "D:\\Angular work\\Github\\khanairtraveleApi\\DBCore\\DBCore.csproj"
+              "D:\\Angular Projects\\API\\KHANAIRSERVICEAPI\\DBCore\\DBCore.csproj": {
+                "projectPath": "D:\\Angular Projects\\API\\KHANAIRSERVICEAPI\\DBCore\\DBCore.csproj"
               },
-              "D:\\Angular work\\Github\\khanairtraveleApi\\Entities\\Entities.csproj": {
-                "projectPath": "D:\\Angular work\\Github\\khanairtraveleApi\\Entities\\Entities.csproj"
+              "D:\\Angular Projects\\API\\KHANAIRSERVICEAPI\\Entities\\Entities.csproj": {
+                "projectPath": "D:\\Angular Projects\\API\\KHANAIRSERVICEAPI\\Entities\\Entities.csproj"
               }
             }
           }
