@@ -1,0 +1,12 @@
+E:\KAS Solution\KAS_Web_APP\DBCore\bin\Release\net6.0\DBCore.deps.json
+E:\KAS Solution\KAS_Web_APP\DBCore\bin\Release\net6.0\DBCore.dll
+E:\KAS Solution\KAS_Web_APP\DBCore\bin\Release\net6.0\DBCore.pdb
+E:\KAS Solution\KAS_Web_APP\DBCore\obj\Release\net6.0\DBCore.csproj.AssemblyReference.cache
+E:\KAS Solution\KAS_Web_APP\DBCore\obj\Release\net6.0\DBCore.GeneratedMSBuildEditorConfig.editorconfig
+E:\KAS Solution\KAS_Web_APP\DBCore\obj\Release\net6.0\DBCore.AssemblyInfoInputs.cache
+E:\KAS Solution\KAS_Web_APP\DBCore\obj\Release\net6.0\DBCore.AssemblyInfo.cs
+E:\KAS Solution\KAS_Web_APP\DBCore\obj\Release\net6.0\DBCore.csproj.CoreCompileInputs.cache
+E:\KAS Solution\KAS_Web_APP\DBCore\obj\Release\net6.0\DBCore.dll
+E:\KAS Solution\KAS_Web_APP\DBCore\obj\Release\net6.0\refint\DBCore.dll
+E:\KAS Solution\KAS_Web_APP\DBCore\obj\Release\net6.0\DBCore.pdb
+E:\KAS Solution\KAS_Web_APP\DBCore\obj\Release\net6.0\ref\DBCore.dll

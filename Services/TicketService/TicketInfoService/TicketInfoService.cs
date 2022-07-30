@@ -28,20 +28,26 @@ namespace Services.TicketService.TicketInfoService
             Hashtable Param = new Hashtable
                 {
                     { "@customerId", ticketInfoRequest.customerId },
+                    {"@dealerId",ticketInfoRequest.dealerId },
+                    {"@representId",ticketInfoRequest.representId },
                     { "@customerCNIC", ticketInfoRequest.customerCNIC },
                     { "@ticketNumber", ticketInfoRequest.ticketNumber },
                     { "@ticketPNR", ticketInfoRequest.ticketPNR },
-                    { "@airlineType", ticketInfoRequest.airlineType },
+                    { "@airlineTypeId", ticketInfoRequest.airlineTypeId },
                     { "@fromLocation", ticketInfoRequest.fromLocation },
                     { "@toLocation", ticketInfoRequest.toLocation },
                     { "@bookingDate", ticketInfoRequest.bookingDate },
                     { "@ticketCost", ticketInfoRequest.ticketCost },
                     { "@ticketRetail", ticketInfoRequest.ticketRetail } ,
                     { "@ticketAmountPaid", ticketInfoRequest.ticketAmountPaid },
-                    { "@ticketType", ticketInfoRequest.ticketType },
+                    { "@ticketTypeId", ticketInfoRequest.ticketTypeId },
                     { "@returnFrom", ticketInfoRequest.returnFrom },
                     { "@returnTo", ticketInfoRequest.returnTo },
                     { "@returnDate", ticketInfoRequest.returnDate },
+                    { "@hotelName", ticketInfoRequest.hotelName },
+                    { "@hotelCostPrice", ticketInfoRequest.hotelCostPrice },
+                    { "@hotelRetailPrice", ticketInfoRequest.hotelRetailPrice },
+                    { "@hotelBokingDate", ticketInfoRequest.hotelBokingDate },
                     { "@passportImage", ticketInfoRequest.passportImage },
                     { "@modifiedBy", ticketInfoRequest.modifiedBy!=null?ticketInfoRequest.modifiedBy:"" }
                 };
@@ -70,20 +76,26 @@ namespace Services.TicketService.TicketInfoService
             Hashtable Param = new Hashtable
                 {
                     { "@customerId", ticketInfoRequest.customerId },
+                    {"@dealerId",ticketInfoRequest.dealerId },
+                    {"@representId",ticketInfoRequest.representId },
                     { "@customerCNIC", ticketInfoRequest.customerCNIC },
                     { "@ticketNumber", ticketInfoRequest.ticketNumber },
                     { "@ticketPNR", ticketInfoRequest.ticketPNR },
-                    { "@airlineType", ticketInfoRequest.airlineType },
+                    { "@airlineTypeId", ticketInfoRequest.airlineTypeId },
                     { "@fromLocation", ticketInfoRequest.fromLocation },
                     { "@toLocation", ticketInfoRequest.toLocation },
                     { "@bookingDate", ticketInfoRequest.bookingDate },
                     { "@ticketCost", ticketInfoRequest.ticketCost },
                     { "@ticketRetail", ticketInfoRequest.ticketRetail } ,
                     { "@ticketAmountPaid", ticketInfoRequest.ticketAmountPaid },
-                    { "@ticketType", ticketInfoRequest.ticketType },
+                    { "@ticketTypeId", ticketInfoRequest.ticketTypeId },
                     { "@returnFrom", ticketInfoRequest.returnFrom },
                     { "@returnTo", ticketInfoRequest.returnTo },
                     { "@returnDate", ticketInfoRequest.returnDate },
+                    { "@hotelName", ticketInfoRequest.hotelName },
+                    { "@hotelCostPrice", ticketInfoRequest.hotelCostPrice },
+                    { "@hotelRetailPrice", ticketInfoRequest.hotelRetailPrice },
+                    { "@hotelBokingDate", ticketInfoRequest.hotelBokingDate },
                     { "@passportImage", ticketInfoRequest.passportImage },
                     { "@modifiedBy", ticketInfoRequest.modifiedBy!=null?ticketInfoRequest.modifiedBy:"" }
                 };
@@ -102,6 +114,28 @@ namespace Services.TicketService.TicketInfoService
 
             return response;
         }
+
+        public async Task<string> DeleteTicketInfo(string ticketNum)
+        {
+            string response = "";
+
+            string spName = @"SP_DeleteTicketInfo";
+
+            Hashtable Param = new Hashtable
+                {
+                    {  "@ticketNum", ticketNum  },
+                  
+                };
+            string dataTable = await _dbConnectionLogic.IUD(spName, Param);
+
+            if (dataTable != null)
+            {
+                response = dataTable;
+            }
+
+            return response;
+        }
+
         public async Task<List<TicketInfoResponse>> GetAllTicketOfCustomer(string customerCNIC)
         {
             List<TicketInfoResponse> response = new List<TicketInfoResponse>();

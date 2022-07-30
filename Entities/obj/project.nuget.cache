@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8ceFp+Jgw7IM2h+SKp6vXmBNPUVryuNg/iXWw6ahOZOCrfUOom189kiKdv9C4F8qJ3fTvcsQrt6RVS6RKKydZA==",
+  "dgSpecHash": "5bcdaxENzrJkQNQZEWbvS6S5pj4SpKMwhggOCwVQGVV8g6B3L1UBjvartnVL+nLYsMmcRq2sZi01M3mGBbNUPw==",
   "success": true,
-  "projectFilePath": "D:\\Angular Projects\\API\\KHANAIRSERVICEAPI\\Entities\\Entities.csproj",
+  "projectFilePath": "E:\\KAS GITHubAPI\\Entities\\Entities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

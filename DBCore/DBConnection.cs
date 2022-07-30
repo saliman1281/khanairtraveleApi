@@ -3,7 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -248,5 +248,82 @@ namespace DBCore
                 throw;
             }
         }
+        public async Task<string> CreateBackupDB()
+        {
+            string backupDestination = @"D:\SQLBackUpFolder\";
+            // check if backup folder exist, otherwise create it.
+            if (!System.IO.Directory.Exists(backupDestination))
+            {
+                System.IO.Directory.CreateDirectory(@"D:\SQLBackUpFolder");
+            }
+            try
+            {
+
+                using (SqlConnection SQL_CONNETION = new SqlConnection(DefaultConnectionString))
+                {
+                    using (SqlCommand SQL_COMMAND = SQL_CONNETION.CreateCommand())
+                    {
+                        using (SqlDataAdapter DbAdapter = new SqlDataAdapter())
+                        {
+                            if (SQL_CONNETION != null && SQL_CONNETION.State == 0)
+                            {
+                                await SQL_CONNETION.OpenAsync();
+                            }
+                            else if (SQL_CONNETION != null && (SQL_CONNETION.State.Equals(ConnectionState.Connecting)))
+                            {
+                                SQL_CONNETION.Dispose();
+                                await SQL_CONNETION.OpenAsync();
+                            }
+                            SQL_COMMAND.Connection = SQL_CONNETION;
+                            SQL_COMMAND.CommandText = "backup database KhanAirServiceDB to disk='" + backupDestination + "KAS.Bak'";
+                            SQL_COMMAND.CommandType = CommandType.Text;
+                            SQL_COMMAND.Parameters.Clear();
+                            SQL_COMMAND.CommandTimeout = 60;
+                            int result = await SQL_COMMAND.ExecuteNonQueryAsync();
+                            if (result == -1)
+                            {
+                                return await Task.FromResult("SUCCESS");
+                            }
+                            else
+                            {
+                                return await Task.FromResult("NO ROW EFFECTED");
+                            }
+
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return await Task.FromResult(ex.Message);
+            }
+        }
+        //public async Task<string> CreateBackupDB()
+        //{
+        //    SqlConnection sqlconn = new SqlConnection(DefaultConnectionString);
+        //    SqlCommand sqlcmd = new SqlCommand();
+        //    SqlDataAdapter da = new SqlDataAdapter();
+        //    DataTable dt = new DataTable();
+        //    // Backup destibation
+        //    string backupDestination = @"D:\SQLBackUpFolder\";
+        //    // check if backup folder exist, otherwise create it.
+        //    if (!System.IO.Directory.Exists(backupDestination))
+        //    {
+        //        System.IO.Directory.CreateDirectory(@"D:\SQLBackUpFolder");
+        //    }
+        //    try
+        //    {
+        //        sqlconn.Open();
+        //        sqlcmd = new SqlCommand("backup database TutorialsPanel to disk='" + backupDestination + DateTime.Now.ToString("ddMMyyyy_HHmmss") + ".Bak'", sqlconn);
+        //        sqlcmd.ExecuteNonQuery();
+        //        //Close connection
+        //        sqlconn.Close();
+        //        return "Success";
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return "Fail";
+        //    }
+        //}
     }
 }

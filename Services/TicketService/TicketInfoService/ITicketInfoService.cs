@@ -12,5 +12,6 @@ namespace Services.TicketService.TicketInfoService
         Task<string> UpdateTicketInfo(TicketInfoRequest request);
         Task<List<TicketInfoResponse>> GetAllTicketOfCustomer(string customerCNIC);
         Task<TicketInfoResponse> GetTicketInfo(string ticketNmbr);
+        Task<string> DeleteTicketInfo(string ticketNum);
     }
 }
