@@ -10,3 +10,15 @@ E:\KAS Solution\KAS_Web_APP\DBCore\obj\Debug\net6.0\DBCore.dll
 E:\KAS Solution\KAS_Web_APP\DBCore\obj\Debug\net6.0\refint\DBCore.dll
 E:\KAS Solution\KAS_Web_APP\DBCore\obj\Debug\net6.0\DBCore.pdb
 E:\KAS Solution\KAS_Web_APP\DBCore\obj\Debug\net6.0\ref\DBCore.dll
+E:\KAS GITHubAPI\DBCore\bin\Debug\net6.0\DBCore.deps.json
+E:\KAS GITHubAPI\DBCore\bin\Debug\net6.0\DBCore.dll
+E:\KAS GITHubAPI\DBCore\bin\Debug\net6.0\DBCore.pdb
+E:\KAS GITHubAPI\DBCore\obj\Debug\net6.0\DBCore.csproj.AssemblyReference.cache
+E:\KAS GITHubAPI\DBCore\obj\Debug\net6.0\DBCore.GeneratedMSBuildEditorConfig.editorconfig
+E:\KAS GITHubAPI\DBCore\obj\Debug\net6.0\DBCore.AssemblyInfoInputs.cache
+E:\KAS GITHubAPI\DBCore\obj\Debug\net6.0\DBCore.AssemblyInfo.cs
+E:\KAS GITHubAPI\DBCore\obj\Debug\net6.0\DBCore.csproj.CoreCompileInputs.cache
+E:\KAS GITHubAPI\DBCore\obj\Debug\net6.0\DBCore.dll
+E:\KAS GITHubAPI\DBCore\obj\Debug\net6.0\refint\DBCore.dll
+E:\KAS GITHubAPI\DBCore\obj\Debug\net6.0\DBCore.pdb
+E:\KAS GITHubAPI\DBCore\obj\Debug\net6.0\ref\DBCore.dll

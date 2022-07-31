@@ -10,3 +10,15 @@ E:\KAS Solution\KAS_Web_APP\Entities\obj\Debug\net6.0\Entities.dll
 E:\KAS Solution\KAS_Web_APP\Entities\obj\Debug\net6.0\refint\Entities.dll
 E:\KAS Solution\KAS_Web_APP\Entities\obj\Debug\net6.0\Entities.pdb
 E:\KAS Solution\KAS_Web_APP\Entities\obj\Debug\net6.0\ref\Entities.dll
+E:\KAS GITHubAPI\Entities\bin\Debug\net6.0\Entities.deps.json
+E:\KAS GITHubAPI\Entities\bin\Debug\net6.0\Entities.dll
+E:\KAS GITHubAPI\Entities\bin\Debug\net6.0\Entities.pdb
+E:\KAS GITHubAPI\Entities\obj\Debug\net6.0\Entities.csproj.AssemblyReference.cache
+E:\KAS GITHubAPI\Entities\obj\Debug\net6.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+E:\KAS GITHubAPI\Entities\obj\Debug\net6.0\Entities.AssemblyInfoInputs.cache
+E:\KAS GITHubAPI\Entities\obj\Debug\net6.0\Entities.AssemblyInfo.cs
+E:\KAS GITHubAPI\Entities\obj\Debug\net6.0\Entities.csproj.CoreCompileInputs.cache
+E:\KAS GITHubAPI\Entities\obj\Debug\net6.0\Entities.dll
+E:\KAS GITHubAPI\Entities\obj\Debug\net6.0\refint\Entities.dll
+E:\KAS GITHubAPI\Entities\obj\Debug\net6.0\Entities.pdb
+E:\KAS GITHubAPI\Entities\obj\Debug\net6.0\ref\Entities.dll
