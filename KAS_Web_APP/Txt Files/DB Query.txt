@@ -1,0 +1,17 @@
+﻿SELECT TABLE_NAME
+FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_CATALOG='KhanAirServiceDB'
+
+
+--delete AirLineInfo
+--delete TicketTypeInfo
+--delete VisaTypeInfo
+--delete VisaInformation
+--delete TicketInformation
+--delete Customers
+--delete TicketInstalment
+--delete VisaInstalment
+--delete DealerInformation
+--delete RepresentativeInformation
+--delete TblRole
+--delete TblUser
