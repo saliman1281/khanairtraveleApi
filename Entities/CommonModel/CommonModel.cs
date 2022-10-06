@@ -17,7 +17,8 @@ namespace Entities.CommonModel
         public class RepresentativeResponse
         {
             public int representId { get; set; }
-            public string representativeName { get; set; }
+            public int dealerId { get; set; }
+            public string representativeName { get; set; }=String.Empty;
         }
         public class RepresentativeRequest
         {
