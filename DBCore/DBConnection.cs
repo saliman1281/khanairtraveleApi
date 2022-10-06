@@ -250,11 +250,11 @@ namespace DBCore
         }
         public async Task<string> CreateBackupDB()
         {
-            string backupDestination = @"D:\SQLBackUpFolder\";
+            string backupDestination = @"C:\SQLBackUpFolder\";
             // check if backup folder exist, otherwise create it.
             if (!System.IO.Directory.Exists(backupDestination))
             {
-                System.IO.Directory.CreateDirectory(@"D:\SQLBackUpFolder");
+                System.IO.Directory.CreateDirectory(@"C:\SQLBackUpFolder");
             }
             try
             {

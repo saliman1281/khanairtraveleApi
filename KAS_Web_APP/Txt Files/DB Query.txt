@@ -15,3 +15,5 @@ WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_CATALOG='KhanAirServiceDB'
 --delete RepresentativeInformation
 --delete TblRole
 --delete TblUser
+
+

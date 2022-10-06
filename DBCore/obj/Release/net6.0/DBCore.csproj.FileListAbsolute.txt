@@ -10,3 +10,15 @@ E:\KAS Solution\KAS_Web_APP\DBCore\obj\Release\net6.0\DBCore.dll
 E:\KAS Solution\KAS_Web_APP\DBCore\obj\Release\net6.0\refint\DBCore.dll
 E:\KAS Solution\KAS_Web_APP\DBCore\obj\Release\net6.0\DBCore.pdb
 E:\KAS Solution\KAS_Web_APP\DBCore\obj\Release\net6.0\ref\DBCore.dll
+C:\Users\Saliman\Videos\KAS GITHubAPI\DBCore\bin\Release\net6.0\DBCore.deps.json
+C:\Users\Saliman\Videos\KAS GITHubAPI\DBCore\bin\Release\net6.0\DBCore.dll
+C:\Users\Saliman\Videos\KAS GITHubAPI\DBCore\bin\Release\net6.0\DBCore.pdb
+C:\Users\Saliman\Videos\KAS GITHubAPI\DBCore\obj\Release\net6.0\DBCore.csproj.AssemblyReference.cache
+C:\Users\Saliman\Videos\KAS GITHubAPI\DBCore\obj\Release\net6.0\DBCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Saliman\Videos\KAS GITHubAPI\DBCore\obj\Release\net6.0\DBCore.AssemblyInfoInputs.cache
+C:\Users\Saliman\Videos\KAS GITHubAPI\DBCore\obj\Release\net6.0\DBCore.AssemblyInfo.cs
+C:\Users\Saliman\Videos\KAS GITHubAPI\DBCore\obj\Release\net6.0\DBCore.csproj.CoreCompileInputs.cache
+C:\Users\Saliman\Videos\KAS GITHubAPI\DBCore\obj\Release\net6.0\DBCore.dll
+C:\Users\Saliman\Videos\KAS GITHubAPI\DBCore\obj\Release\net6.0\refint\DBCore.dll
+C:\Users\Saliman\Videos\KAS GITHubAPI\DBCore\obj\Release\net6.0\DBCore.pdb
+C:\Users\Saliman\Videos\KAS GITHubAPI\DBCore\obj\Release\net6.0\ref\DBCore.dll

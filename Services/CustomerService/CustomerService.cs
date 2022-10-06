@@ -99,9 +99,11 @@ namespace Services.CustomerService
         {
             string response ="";
 
-            string spName = @"SP_AddCustomer";
+            try
+            {
+                string spName = @"SP_AddCustomer";
 
-            Hashtable Param = new Hashtable
+                Hashtable Param = new Hashtable
                 {
                     { "@customerFirstName", request.customerFirstName },
                     { "@customerLastName", request.customerLastName },
@@ -116,14 +118,19 @@ namespace Services.CustomerService
                     { "@modifiedBy", request.modifiedBy },
                 };
 
-           string dataTable = await _dbConnectionLogic.IUD(spName, Param);
+                string dataTable = await _dbConnectionLogic.IUD(spName, Param);
 
-            if (dataTable != null)
-            {
-                response =dataTable;
+                if (dataTable != null)
+                {
+                    response = dataTable;
+                }
+
+                return response;
             }
-
-            return response;
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
         }
 
         public async Task<string> UpdateCustomer(CustomerRequest request)
