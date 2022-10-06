@@ -32,7 +32,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Saliman\\Videos\\KAS GITHubAPI\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\Saliman\\Videos\\KAS GITHubAPI\\Entities\\Entities.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

@@ -1,4 +1,6 @@
 using DBCore;
+using DBCore.DBContext;
+using Microsoft.EntityFrameworkCore;
 using Services.CommonService;
 using Services.CustomerService;
 using Services.DealerService.DealerInfoService;
@@ -20,6 +22,7 @@ builder.Services.AddScoped<IVisaInfoService, VisaInfoService>();
 builder.Services.AddScoped<IVisaInstalmentService, VisaInstalmentService>();
 builder.Services.AddScoped<IDealerInfoService, DealerInfoService>();
 builder.Services.AddScoped<ICommonService, CommonService>();
+builder.Services.AddDbContext<AppDBContext>(options => options.UseSqlServer("server=.;database=KhanAirServiceDB; Connect Timeout=120;Trusted_Connection=True"));
 builder.Services.AddMvc();
 builder.Services.AddControllers();
 builder.Services.AddControllers();

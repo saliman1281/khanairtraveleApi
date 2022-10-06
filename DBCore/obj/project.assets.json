@@ -737,6 +737,16 @@
             "rid": "win"
           }
         }
+      },
+      "Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entities.dll": {}
+        }
       }
     }
   },
@@ -1902,10 +1912,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Entities/1.0.0": {
+      "type": "project",
+      "path": "../Entities/Entities.csproj",
+      "msbuildProject": "../Entities/Entities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Entities >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.6",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.6",
       "Microsoft.Extensions.Configuration.Abstractions >= 6.0.0"
@@ -1943,7 +1959,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Saliman\\Videos\\KAS GITHubAPI\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\Saliman\\Videos\\KAS GITHubAPI\\Entities\\Entities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

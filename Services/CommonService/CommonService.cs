@@ -1,4 +1,6 @@
 ﻿using DBCore;
+using DBCore.DBContext;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -9,14 +11,17 @@ using static Entities.CommonModel.CommonModel;
 
 namespace Services.CommonService
 {
-    public class CommonService: ICommonService
+    public class CommonService : ICommonService
     {
         private readonly IDBConnection _dbConnectionLogic;
         private readonly IListConverter _listConverter;
-        public CommonService(IDBConnection dbConnectionLogic, IListConverter listConverter)
+        private readonly AppDBContext _appDBContext;
+
+        public CommonService(IDBConnection dbConnectionLogic, IListConverter listConverter, AppDBContext appDBContext)
         {
             _dbConnectionLogic = dbConnectionLogic;
             _listConverter = listConverter;
+            _appDBContext = appDBContext;
         }
         public async Task<List<DealerDataResponse>> GetCommonData(string custId)
         {
@@ -56,8 +61,8 @@ namespace Services.CommonService
 
             Hashtable Param = new Hashtable
                 {
-                    { "@dealerId", request.DealerId },
-                    { "@representativeName", request.RepName },
+                    { "@dealerId", request.dealerId },
+                    { "@representativeName", request.representativeName },
                     { "@representativeMobile", "" },
                     { "@modifiedBy", request.modifiedBy!=null?request.modifiedBy:"" },
                 };
@@ -70,6 +75,26 @@ namespace Services.CommonService
             }
 
             return response;
+        }
+        public async Task<string> UpdateRepresentative(RepresentativeRequest request)
+        {
+            try
+            {
+                var res = await _appDBContext.RepresentativeRequests.SingleOrDefaultAsync(x => x.representId == request.representId);
+                if (res != null)
+                {
+                    res.dealerId = request.dealerId;
+                    res.representativeName = request.representativeName;
+                    _appDBContext.Entry(res).State = EntityState.Modified;
+                    await _appDBContext.SaveChangesAsync();
+                }
+
+                return "Success";
+            }
+            catch (Exception)
+            {
+                return "";
+            }
         }
         public async Task<string> AddAirLine(AirLineRequest request)
         {
@@ -92,6 +117,26 @@ namespace Services.CommonService
             }
 
             return response;
+        }
+        public async Task<string> UpdateAirLine(AirLineRequest request)
+        {
+            try
+            {
+                var res = await _appDBContext.AirLineRequests.SingleOrDefaultAsync(x => x.AirLineId == request.AirLineId);
+                if (res != null)
+                {
+                    res.AirLineABR = request.AirLineABR;
+                    res.AirLineFullName = request.AirLineFullName;
+                    _appDBContext.Entry(res).State = EntityState.Modified;
+                    await _appDBContext.SaveChangesAsync();
+                }
+
+                return "Success";
+            }
+            catch (Exception)
+            {
+                return "";
+            }
         }
         public async Task<List<AirLineResponse>> GetAirLineList()
         {
@@ -126,6 +171,25 @@ namespace Services.CommonService
 
             return response;
         }
+        public async Task<string> UpdateTicketType(TicketTypeRequest request)
+        {
+            try
+            {
+                var res = await _appDBContext.TicketTypeRequests.SingleOrDefaultAsync(x => x.TicketId == request.TicketId);
+                if (res != null)
+                {
+                    res.TicketTypeName = request.TicketTypeName;
+                    _appDBContext.Entry(res).State = EntityState.Modified;
+                    await _appDBContext.SaveChangesAsync();
+                }
+
+                return "Success";
+            }
+            catch (Exception)
+            {
+                return "";
+            }
+        }
         public async Task<List<TicketTypeResponse>> GetTicketTypeList()
         {
             List<TicketTypeResponse> response = new List<TicketTypeResponse>();
@@ -158,6 +222,25 @@ namespace Services.CommonService
             }
 
             return response;
+        }
+        public async Task<string> UpdateVisaType(VisaTypeRequest request)
+        {
+            try
+            {
+                var res = await _appDBContext.VisaTypeRequests.SingleOrDefaultAsync(x => x.VisaTypeId == request.VisaTypeId);
+                if (res != null)
+                {
+                    res.VisaTypeName = request.VisaTypeName;
+                    _appDBContext.Entry(res).State = EntityState.Modified;
+                    await _appDBContext.SaveChangesAsync();
+                }
+
+                return "Success";
+            }
+            catch (Exception)
+            {
+                return "";
+            }
         }
         // GetVisaTypeList
         public async Task<List<VisaTypeResponse>> GetVisaTypeList()

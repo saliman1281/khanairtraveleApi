@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace Entities.CommonModel
@@ -8,57 +10,68 @@ namespace Entities.CommonModel
     {
         public class CommonDataRequest
         {
+            [NotMapped]
+            public bool IsUpdate { get; set; }
         }
         public class DealerDataResponse
         {
             public int dealerId { get; set; }
-            public string dealerName { get; set; }
+            public string? dealerName { get; set; }
         }
         public class RepresentativeResponse
         {
             public int representId { get; set; }
             public int dealerId { get; set; }
-            public string representativeName { get; set; }=String.Empty;
+            public string representativeName { get; set; } = String.Empty;
         }
-        public class RepresentativeRequest
+        [Table("RepresentativeInformation")]
+        public class RepresentativeRequest: CommonDataRequest
         {
-            public int DealerId { get; set; }
-            public string RepName { get; set; }
-            public string modifiedBy { get; set; }
-        } 
-        public class AirLineRequest
+            [Key]
+            public int representId { get; set; }
+            public int dealerId { get; set; }
+            public string? representativeName { get; set; }
+            public string? modifiedBy { get; set; }
+        }
+        [Table("AirLineInfo")]
+        public class AirLineRequest : CommonDataRequest
         {
-            public string AirLineFullName { get; set; }
-            public string AirLineABR { get; set; }
-            public string modifiedBy { get; set; }
+            [Key]
+            public int AirLineId { get; set; }
+            public string? AirLineFullName { get; set; }
+            public string? AirLineABR { get; set; }
+            public string? modifiedBy { get; set; }
         }
         public class AirLineResponse
         {
             public int AirLineId { get; set; }
-            public string AirLineFullName { get; set; }
-            public string AirLineABR { get; set; }
+            public string? AirLineFullName { get; set; }
+            public string? AirLineABR { get; set; }
         }
-        public class TicketTypeRequest
+        [Table("TicketTypeInfo")]
+        public class TicketTypeRequest : CommonDataRequest
         {
+            [Key]
             public int TicketId { get; set; }
-            public string TicketTypeName { get; set; }
-            public string modifiedBy { get; set; }
+            public string? TicketTypeName { get; set; }
+            public string? modifiedBy { get; set; }
         }
         public class TicketTypeResponse
         {
             public int TicketId { get; set; }
-            public string TicketTypeName { get; set; }
+            public string? TicketTypeName { get; set; }
         }
-        public class VisaTypeRequest
+        [Table("VisaTypeInfo")]
+        public class VisaTypeRequest : CommonDataRequest
         {
             public int VisaTypeId { get; set; }
-            public string VisaTypeName { get; set; }
-            public string modifiedBy { get; set; }
+            public string? VisaTypeName { get; set; }
+            public string? modifiedBy { get; set; }
         }
         public class VisaTypeResponse
         {
             public int VisaTypeId { get; set; }
-            public string VisaTypeName { get; set; }
+            public string? VisaTypeName { get; set; }
         }
     }
 }
